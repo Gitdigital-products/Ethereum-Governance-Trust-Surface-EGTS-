@@ -1,47 +1,22 @@
-File: schemas/contributor_role.schema.json
-
-```
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/schemas/contributor_role.schema.json",
-  "title": "ContributorRole",
-  "type": "object",
-  "properties": {
-    "role_id": {
-      "type": "string",
-      "description": "Unique role identifier"
-    },
-    "role_name": {
-      "type": "string",
-      "description": "Human-readable role name"
-    },
-    "permissions": {
-      "type": "array",
-      "items": { "type": "string" },
-      "description": "List of permission identifiers"
-    },
-    "assignee": {
-      "type": "string",
-      "description": "DID or Ethereum address of the assignee"
-    },
-    "valid_from": {
-      "type": "string",
-      "format": "date-time",
-      "description": "Start of validity"
-    },
-    "valid_until": {
-      "type": "string",
-      "format": "date-time",
-      "description": "End of validity, if bounded"
-    },
-    "metadata": {
-      "type": "object",
-      "properties": {
-        "version": { "type": "string", "const": "[PLACEHOLDER: VERSION]" },
-        "schema_date": { "type": "string", "const": "[PLACEHOLDER: DATE]" }
-      }
-    }
+  "signal_id": "sig-2026-001",
+  "source_event": "evt-2026-001",
+  "actor": {
+    "id": "did:gitdigital:contributor-001",
+    "role": "Core Contributor"
   },
-  "required": ["role_id", "role_name", "assignee", "valid_from"]
+  "validation": {
+    "method": "multi-sig",
+    "validators": [
+      "did:gitdigital:validator-A",
+      "did:gitdigital:validator-B"
+    ],
+    "timestamp": "2026-04-11T19:05:00Z"
+  },
+  "trust_surface": {
+    "integrity": "verified",
+    "authority_scope": "governance",
+    "chain_agnostic": true
+  },
+  "hash": "0x8f3c1a9e0b4d2c7f..."
 }
-```
