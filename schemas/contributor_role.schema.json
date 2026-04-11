@@ -1,0 +1,47 @@
+File: schemas/contributor_role.schema.json
+
+```
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/contributor_role.schema.json",
+  "title": "ContributorRole",
+  "type": "object",
+  "properties": {
+    "role_id": {
+      "type": "string",
+      "description": "Unique role identifier"
+    },
+    "role_name": {
+      "type": "string",
+      "description": "Human-readable role name"
+    },
+    "permissions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of permission identifiers"
+    },
+    "assignee": {
+      "type": "string",
+      "description": "DID or Ethereum address of the assignee"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Start of validity"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date-time",
+      "description": "End of validity, if bounded"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "const": "[PLACEHOLDER: VERSION]" },
+        "schema_date": { "type": "string", "const": "[PLACEHOLDER: DATE]" }
+      }
+    }
+  },
+  "required": ["role_id", "role_name", "assignee", "valid_from"]
+}
+```
