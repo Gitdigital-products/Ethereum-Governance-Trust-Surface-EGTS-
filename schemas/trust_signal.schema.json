@@ -1,0 +1,46 @@
+File: schemas/trust_signal.schema.json
+
+```
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/trust_signal.schema.json",
+  "title": "TrustSignal",
+  "type": "object",
+  "properties": {
+    "signal_id": {
+      "type": "string",
+      "description": "Unique identifier for the trust signal"
+    },
+    "signal_type": {
+      "type": "string",
+      "enum": ["attestation", "reputation_score", "endorsement", "challenge"]
+    },
+    "issuer": {
+      "type": "string",
+      "description": "DID or Ethereum address of the signal issuer"
+    },
+    "target": {
+      "type": "string",
+      "description": "DID or Ethereum address the signal applies to"
+    },
+    "value": {
+      "type": "number",
+      "description": "Numerical trust value (if applicable)"
+    },
+    "expiration": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Optional expiration timestamp"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "const": "[PLACEHOLDER: VERSION]" },
+        "schema_date": { "type": "string", "const": "[PLACEHOLDER: DATE]" }
+      }
+    }
+  },
+  "required": ["signal_id", "signal_type", "issuer", "target"]
+}
+```
+
