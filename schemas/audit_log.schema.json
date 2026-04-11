@@ -1,0 +1,45 @@
+File: schemas/audit_log.schema.json
+
+```
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/audit_log.schema.json",
+  "title": "AuditLog",
+  "type": "object",
+  "properties": {
+    "log_id": {
+      "type": "string",
+      "description": "Unique log entry identifier"
+    },
+    "action": {
+      "type": "string",
+      "description": "Type of action performed"
+    },
+    "actor": {
+      "type": "string",
+      "description": "DID or Ethereum address of the actor"
+    },
+    "resource": {
+      "type": "string",
+      "description": "Resource affected (e.g., proposal ID, role ID)"
+    },
+    "changes": {
+      "type": "object",
+      "description": "Before/after state or diff"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the action occurred"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "const": "[PLACEHOLDER: VERSION]" },
+        "schema_date": { "type": "string", "const": "[PLACEHOLDER: DATE]" }
+      }
+    }
+  },
+  "required": ["log_id", "action", "actor", "resource", "timestamp"]
+}
+```
