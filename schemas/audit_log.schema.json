@@ -1,45 +1,21 @@
-File: schemas/audit_log.schema.json
-
-```
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/schemas/audit_log.schema.json",
-  "title": "AuditLog",
-  "type": "object",
-  "properties": {
-    "log_id": {
-      "type": "string",
-      "description": "Unique log entry identifier"
-    },
-    "action": {
-      "type": "string",
-      "description": "Type of action performed"
-    },
-    "actor": {
-      "type": "string",
-      "description": "DID or Ethereum address of the actor"
-    },
-    "resource": {
-      "type": "string",
-      "description": "Resource affected (e.g., proposal ID, role ID)"
-    },
-    "changes": {
-      "type": "object",
-      "description": "Before/after state or diff"
-    },
-    "timestamp": {
-      "type": "string",
-      "format": "date-time",
-      "description": "When the action occurred"
-    },
-    "metadata": {
-      "type": "object",
-      "properties": {
-        "version": { "type": "string", "const": "[PLACEHOLDER: VERSION]" },
-        "schema_date": { "type": "string", "const": "[PLACEHOLDER: DATE]" }
-      }
+  "log_id": "audit-2026-04",
+  "entries": [
+    {
+      "entry_id": "audit-entry-001",
+      "event_ref": "evt-2026-001",
+      "signal_ref": "sig-2026-001",
+      "timestamp": "2026-04-11T19:06:00Z",
+      "hash": "0x8f3c1a9e0b4d2c7f...",
+      "validators": [
+        "did:gitdigital:validator-A",
+        "did:gitdigital:validator-B"
+      ]
     }
-  },
-  "required": ["log_id", "action", "actor", "resource", "timestamp"]
+  ],
+  "metadata": {
+    "ecosystem": "Ethereum",
+    "audit_period": "2026-04",
+    "version": "0.2.0"
+  }
 }
-```
