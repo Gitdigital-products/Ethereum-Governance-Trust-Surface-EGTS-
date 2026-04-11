@@ -1,0 +1,42 @@
+File: schemas/governance_event.schema.json
+
+```
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/governance_event.schema.json",
+  "title": "GovernanceEvent",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Unique identifier for the governance event"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": ["proposal_created", "vote_cast", "proposal_executed", "delegation_changed"]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of the event"
+    },
+    "blockchain_reference": {
+      "type": "object",
+      "properties": {
+        "chain_id": { "type": "string" },
+        "block_number": { "type": "string" },
+        "transaction_hash": { "type": "string" }
+      },
+      "required": ["chain_id", "transaction_hash"]
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "const": "[PLACEHOLDER: VERSION]" },
+        "schema_date": { "type": "string", "const": "[PLACEHOLDER: DATE]" }
+      }
+    }
+  },
+  "required": ["event_id", "event_type", "timestamp", "blockchain_reference"]
+}
+```
