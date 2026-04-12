@@ -1,3 +1,37 @@
+
+=== FILE: sponsors_tier.md ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+Mirrors sponsorship_tier.md but focuses on the mapping from sponsors to their tiers.
+
+Definitions
+
+· Sponsor Tier Assignment: The specific tier each sponsor has committed to.
+
+Roles & Responsibilities
+
+· GitDigital Products – Maintains this mapping.
+· RickCreator87 – Ensures recognition aligns with tier.
+
+Requirements
+
+· Each sponsor in sponsors.md must have a corresponding tier in this file.
+· Upgrades/downgrades require a new signed agreement.
+
+Current Sponsor Tier Mapping
+
+Sponsor Name Tier Effective Date
+GitDigital Products Founding 2026-01-01
+
+Governance Alignment
+
+Tier assignments follow the governance‑approved sponsorship policy.
+
+
+
 === FILE: sponsors_tier.md ===
 # Sponsors Tier
 
