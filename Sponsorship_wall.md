@@ -1,4 +1,42 @@
 === FILE: sponsorship_wall.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Detailed wall that includes sponsor logos (as text references), contribution highlights, and testimonials.
+
+Definitions
+
+· Sponsorship Wall: Extended version of sponsor_wall.md with richer metadata.
+
+Roles & Responsibilities
+
+· GitDigital Products – Approves testimonial text.
+· RickCreator87 – Maintains markdown links to logos.
+
+Requirements
+
+· Each sponsor may provide a 100‑word testimonial.
+· Logos are stored in /assets/sponsors/.
+
+Current Sponsorship Wall
+
+Founding Sponsors
+
+GitDigital Products
+
+· Contribution: $50,000+
+· Since: 2026-01-01
+· Testimonial: “We believe in transparent Ethereum governance.”
+
+Governance Alignment
+
+The sponsorship wall is an official project asset; its content is governed by the project’s code of conduct.
+
+=== FILE: sponsorship_wall.md ===
 # Sponsorship Wall
 
 ## Purpose
