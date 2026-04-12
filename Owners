@@ -1,0 +1,35 @@
+=== FILE: OWNERS ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+This file lists the entities that have administrative and technical ownership over the EGTS repository and its deliverables.
+
+Definitions
+
+· Owner: An entity with final authority over repository settings, releases, and governance compliance.
+· Administrative Owner: GitDigital Products – controls access, billing, and legal aspects.
+· Technical Owner: RickCreator87 – responsible for technical architecture and release integrity.
+
+Roles & Responsibilities
+
+· GitDigital Products:
+  · Approve changes to governance files.
+  · Manage repository secrets and environment variables.
+  · Act as escalation point for unresolved technical disputes.
+· RickCreator87:
+  · Merge pull requests only after required approvals.
+  · Enforce coding and documentation standards.
+  · Report ownership changes to all contributors.
+
+Requirements
+
+· This file MUST be present at the repository root.
+· Any change to OWNERS requires a pull request approved by GitDigital Products.
+· Owners cannot be removed unless a successor is named and transitioned.
+
+Governance Alignment
+
+Serves as the authoritative source of ownership for all EGTS governance processes.
+
