@@ -1,0 +1,36 @@
+=== FILE: MAINTAINERS ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+Lists the active maintainers of the EGTS project, their areas of maintenance, and their duties.
+
+Definitions
+
+· Maintainer: A contributor with merge rights and responsibility for day‑to‑day repository health.
+
+Roles & Responsibilities
+
+· GitDigital Products – Release management, security patches.
+· RickCreator87 – Code review coordination, documentation upkeep.
+· Maintainers must:
+  · Triage issues within 72 hours.
+  · Ensure CI passes before merging.
+  · Update status files weekly.
+
+Requirements
+
+· Maintainers must be nominated by an owner and approved by GitDigital Products.
+· Maintainers must complete a security and governance training annually.
+· Inactive maintainers (no activity for 90 days) may be moved to emeritus status.
+
+Current Maintainers
+
+· GitDigital Products (primary)
+· RickCreator87
+
+Governance Alignment
+
+Maintainer actions are subject to review by owners as defined in GOVERNANCE.md.
+
