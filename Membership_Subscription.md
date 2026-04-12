@@ -1,3 +1,36 @@
+=== FILE: membership_subscription.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Describes how to subscribe to membership (if paid or contribution‑based), including renewal terms.
+
+Definitions
+
+· Subscription: A recurring commitment to maintain membership status.
+
+Roles & Responsibilities
+
+· GitDigital Products – Processes paid subscriptions.
+· RickCreator87 – Tracks contribution‑based subscriptions.
+
+Requirements
+
+· Paid memberships auto‑renew annually unless canceled.
+· Contribution‑based memberships require quarterly verification.
+
+Subscription Options
+
+· Free (based on contributions) – no financial commitment.
+· Paid Membership (not yet available).
+
+Governance Alignment
+
+Subscription model must be approved by the Governance Board.
+
 === FILE: membership_Subscription.md ===
 # Membership Subscription
 
