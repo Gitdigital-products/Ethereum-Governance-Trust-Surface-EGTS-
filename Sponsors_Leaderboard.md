@@ -1,4 +1,38 @@
 === FILE: sponsors_leaderboard.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Ranks sponsors by total cumulative contribution, updated monthly.
+
+Definitions
+
+· Leaderboard: A sorted list from highest to lowest contributor.
+
+Roles & Responsibilities
+
+· GitDigital Products – Provides contribution data.
+· RickCreator87 – Publishes leaderboard.
+
+Requirements
+
+· Only monetary contributions count (in‑kind may be converted at board discretion).
+· Ties broken by earliest start date.
+
+Leaderboard (as of 2026-04-12)
+
+Rank Sponsor Name Total Contribution Tier
+1 GitDigital Products $50,000 Founding
+
+Governance Alignment
+
+Leaderboard is for recognition only and carries no governance power.
+
+
+=== FILE: sponsors_leaderboard.md ===
 # Sponsors Leaderboard
 
 ## Purpose
