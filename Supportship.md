@@ -1,4 +1,37 @@
 === FILE: supportship.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Defines the concept of “supportship” – a non‑financial contribution role.
+
+Definitions
+
+· Supportship: A status granted to entities that provide ongoing services or resources without monetary exchange.
+
+Roles & Responsibilities
+
+· GitDigital Products – Grants supportship.
+· RickCreator87 – Verifies that in‑kind contributions are sustained.
+
+Requirements
+
+· Supportships are reviewed every 6 months.
+· May be revoked if contribution stops.
+
+Current Supportship Holders
+
+· GitDigital Products (administrative supportship)
+
+Governance Alignment
+
+Supportships are a form of recognition, not a governance role.
+
+
+=== FILE: supportship.md ===
 # Supportship
 
 ## Purpose
