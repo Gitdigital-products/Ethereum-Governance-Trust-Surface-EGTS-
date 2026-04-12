@@ -1,4 +1,69 @@
 === FILE: support.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Defines the support structure for EGTS users, including response times, channels, and escalation.
+
+Definitions
+
+· Support: Assistance provided to users of EGTS software and documentation.
+
+Roles & Responsibilities
+
+· GitDigital Products – Provides commercial support for sponsors.
+· RickCreator87 – Manages community support via GitHub issues.
+
+Requirements
+
+· Support requests must include severity level (Critical, High, Normal, Low).
+· Critical issues receive response within 4 hours (business days).
+
+Support Channels
+
+· GitHub Issues (community)
+· Email: support@gitdigital.example (sponsors only)
+
+Governance Alignment
+
+Support policies are reviewed quarterly by GitDigital Products.
+=== FILE: support_tier.md ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+Defines support levels corresponding to sponsorship tiers.
+
+Definitions
+
+· Support Tier: A service level agreement (SLA) based on sponsorship.
+
+Roles & Responsibilities
+
+· GitDigital Products – Delivers the support.
+· RickCreator87 – Tracks SLA compliance.
+
+Requirements
+
+· SLAs are binding for sponsors.
+· Non‑sponsors receive best‑effort community support.
+
+Tier Response SLA (Critical) Support Channel Included Hours
+None 48 hours GitHub Issues Community
+Bronze 24 hours Email Business days
+Silver 8 hours Email + private chat 24/7
+Gold+ 4 hours Dedicated engineer 24/7
+
+Governance Alignment
+
+Support tiers are enforced as part of the sponsorship agreement.
+
+
+=== FILE: support.md ===
 # Support
 
 ## Purpose
