@@ -1,3 +1,67 @@
+=== FILE: membership_leaderboard.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Ranks members by total contributions (code, funding, governance participation) over the lifetime of the project.
+
+Definitions
+
+· Leaderboard: A motivational tool, not a governance instrument.
+
+Roles & Responsibilities
+
+· GitDigital Products – Decides scoring algorithm.
+· RickCreator87 – Publishes quarterly.
+
+Requirements
+
+· Algorithm: 1 point per commit, $1 = 1 point, 1 governance meeting attendance = 10 points.
+
+Membership Leaderboard (2026-04-12)
+
+Rank Member Points Tier
+1 GitDigital Products 50,000 Founding Core
+2 RickCreator87 500 Core Member
+
+Governance Alignment
+
+Leaderboard is for recognition; points have no binding effect.
+=== FILE: members_tier.md ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+Maps each member to their current membership tier.
+
+Definitions
+
+· Member Tier Assignment: The active tier for each member.
+
+Roles & Responsibilities
+
+· GitDigital Products – Updates after tier changes.
+· RickCreator87 – Validates against contribution records.
+
+Requirements
+
+· Changes must be approved by the entity that granted the tier.
+
+Member Tier Assignments
+
+Member Tier Effective Date
+GitDigital Products Founding Core 2026-01-01
+RickCreator87 Core Member 2026-01-01
+
+Governance Alignment
+
+Tier assignments are public and used in GOVERNANCE.md for voting calculations.
+
+
 === FILE: membership_Leaderboard.md ===
 # Membership Leaderboard
 
