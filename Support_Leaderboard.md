@@ -1,3 +1,40 @@
+
+=== FILE: support_leaderboard.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Ranks supporters by estimated value of their contributions (financial and in‑kind).
+
+Definitions
+
+· Supporter Leaderboard: A ranked list based on total contributed value.
+
+Roles & Responsibilities
+
+· GitDigital Products – Approves valuation method.
+· RickCreator87 – Updates monthly.
+
+Requirements
+
+· In‑kind support is valued at fair market rates.
+· Disputes resolved by GitDigital Products.
+
+Support Leaderboard (2026-04-12)
+
+Rank Supporter Total Value Type
+1 GitDigital Products $60,000 Mixed
+
+Governance Alignment
+
+Leaderboard is for recognition only; does not affect governance rights.
+
+
+
+
 === FILE: support_leaderboard.md ===
 # Support Leaderboard
 
