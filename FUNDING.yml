@@ -1,0 +1,39 @@
+=== FILE: FUNDING.yml ===
+# FUNDING.yml
+purpose: |
+  This YAML file configures the funding links displayed on the ApexOS GitHub repository.
+  It lists all official funding platforms and their respective URLs, enabling visitors to easily support the project.
+definitions:
+  funding_link: A URL that directs to a platform where financial contributions can be made.
+  platform: GitHub Sponsors, Open Collective, Patreon, or Bitcoin address.
+tiers:
+  - name: GitHub Sponsors
+    monthly_minimum: 5
+    monthly_maximum: null
+  - name: Open Collective
+    monthly_minimum: 1
+    monthly_maximum: null
+  - name: Patreon
+    monthly_minimum: 3
+    monthly_maximum: null
+benefits:
+  - Any contribution via these platforms automatically qualifies the contributor for support tiers as defined in support.md.
+  - Contributors who give via GitHub Sponsors receive a special badge on their GitHub profile.
+requirements:
+  - All funding platforms must be managed by the ApexOS Core Team or authorized fiscal host.
+  - URLs must use HTTPS and point to official ApexOS accounts.
+governance_alignment:
+  - The funding configuration is approved by the Core Team via pull request.
+  - Changes to the funding platforms require a 2/3 majority vote of Core Team members.
+branding_rules:
+  - The funding YAML does not itself contain branding, but the referenced platforms must display the ApexOS logo as per their terms.
+  - No external advertising or affiliate links are permitted.
+public_recognition_rules:
+  - GitHub displays “Sponsor” buttons based on this file. No additional recognition rules apply directly to the YAML.
+  - Contributors who fund via these platforms are recognized according to the rules in support.md and support_leaderboard.md.
+templates:
+  - .github/FUNDING.yml template: |
+      github: [apexos]
+      open_collective: apexos
+      patreon: apexos
+      custom: ["https://apexos.org/donate"]
