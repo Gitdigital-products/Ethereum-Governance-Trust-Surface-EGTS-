@@ -1,4 +1,50 @@
 === FILE: sponsor_wall.md ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+A visual‑friendly, markdown “wall of thanks” listing all sponsors in descending order of contribution.
+
+Definitions
+
+· Sponsor Wall: A public recognition area for sponsors.
+
+Roles & Responsibilities
+
+· GitDigital Products – Updates order quarterly.
+· RickCreator87 – Ensures wall is displayed in the project’s main documentation.
+
+Requirements
+
+· Order is by tier (highest first), then alphabetically.
+· Sponsors that fail to renew are moved to a “Past Sponsors” section after 30 days.
+
+Sponsor Wall
+
+Founding Sponsors
+
+· GitDigital Products
+
+Gold Sponsors
+
+(none)
+
+Silver Sponsors
+
+(none)
+
+Bronze Sponsors
+
+(none)
+
+Past Sponsors
+
+(none)
+
+Governance Alignment
+
+The wall serves as the official recognition artifact referenced in GOVERNANCE.md.=== FILE: sponsor_wall.md ===
 # Sponsor Wall
 
 ## Purpose
