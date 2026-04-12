@@ -1,5 +1,7 @@
 === FILE: sponsor_wall.md ===
+
 OWNER: GitDigital Products
+
 AUTHOR: RickCreator87
 
 Purpose
