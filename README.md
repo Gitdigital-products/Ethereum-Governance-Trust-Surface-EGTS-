@@ -44,12 +44,13 @@ etsc-core/
 [![Public Good: Open Spec](https://img.shields.io/badge/Public%20Good-Open%20Spec-brightgreen)]()
 
 [PLACEHOLDER: SUPPORT LINKS]
-- Documentation: `https://example.com/docs`
-- Support: `https://example.com/support`
-- Contact: `https://example.com/contact`
-
-
-
+- : `https://github.com/Gitdigital-products/Ethereum-Governance-Trust-Surface-EGTS-`
+- Support: `https://github.com/Gitdigital-products/Ethereum-Governance-Trust-Surface-EGTS-/wiki`
+- Contact: `https://github.com/Gitdigital-products/Ethereum-Governance-Trust-Surface-EGTS-/discussions`
+- `https://github.com/Gitdigital-products/Ethereum-Governance-Trust-Surface-EGTS-/issues`
+- `https://github.com/Gitdigital-products/Ethereum-Governance-Trust-Surface-EGTS-/releases`
+- Documentation: `https://github.com/Gitdigital-products/Ethereum-Governance-Trust-Surface-EGTS-/tree/main/docs`
+- 
 # Ethereum Governance Trust Surface (EGTS)
 A modular, chain‑agnostic trust‑surface framework for governance, auditability, and contributor legitimacy across Ethereum ecosystems.
 
