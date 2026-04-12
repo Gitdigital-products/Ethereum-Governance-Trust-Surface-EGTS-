@@ -1,3 +1,37 @@
+
+=== FILE: support_wall.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Publicly acknowledges organizations that provide direct support (not necessarily financial) to EGTS.
+
+Definitions
+
+· Support: Provision of services, infrastructure, or expert time.
+
+Roles & Responsibilities
+
+· GitDigital Products – Decides what qualifies as support.
+· RickCreator87 – Maintains the wall.
+
+Requirements
+
+· Support must be documented (e.g., donated CI minutes, legal advice).
+· Wall updated quarterly.
+
+Support Wall
+
+Supporter Type of Support Value (est.) Since
+GitDigital Products Hosting, legal, admin $10,000 2026-01-01
+
+Governance Alignment
+
+Support recognition is non‑financial and does not affect sponsorship tiers.
+
 === FILE: support_wall.md ===
 # Support Wall
 
