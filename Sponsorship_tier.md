@@ -1,4 +1,41 @@
 === FILE: sponsorship_tier.md ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+Defines the available sponsorship tiers, their financial requirements, and associated benefits.
+
+Definitions
+
+· Tier: A level of sponsorship with fixed contribution and recognition.
+
+Roles & Responsibilities
+
+· GitDigital Products – Sets tier amounts.
+· RickCreator87 – Implements recognition benefits (e.g., logos on documentation).
+
+Requirements
+
+· Tiers are reviewed annually.
+· Benefits are non‑transferable.
+
+Tiers
+
+Tier Contribution (annual) Benefits
+Bronze $500 Name in sponsors.md, sponsor_wall.md
+Silver $2,000 Bronze benefits + logo on project README
+Gold $10,000 Silver benefits + dedicated support contact (business hours)
+Founding $50,000+ Gold benefits + governance advisory seat (non‑voting)
+
+Governance Alignment
+
+Tier benefits are subject to change by GitDigital Products after 30 days notice.
+
+
+
+
+=== FILE: sponsorship_tier.md ===
 # Sponsorship Tier
 
 ## Purpose
