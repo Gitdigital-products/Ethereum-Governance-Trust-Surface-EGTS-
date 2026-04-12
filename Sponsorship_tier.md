@@ -1,4 +1,6 @@
 === FILE: sponsorship_tier.md ===
+
+
 OWNER: GitDigital Products
 AUTHOR: RickCreator87
 
