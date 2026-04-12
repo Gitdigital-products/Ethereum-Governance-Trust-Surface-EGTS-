@@ -1,6 +1,7 @@
 === FILE: sponsoring.md ===
 
 OWNER: GitDigital Products
+
 AUTHOR: RickCreator87
 
 Purpose
