@@ -1,42 +1,34 @@
 === FILE: sponsoring.md ===
-# Sponsoring
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
 
-## Purpose
-This document describes the act of sponsoring the ApexOS project, including how to initiate a sponsorship, payment methods, and ongoing relationship management.
+Purpose
 
-## Definitions
-- **Sponsoring**: The process by which an entity commits resources (financial or in‑kind) to support ApexOS.
-- **In‑kind Sponsoring**: Non‑monetary contributions such as hosting, CI/CD credits, or design services valued at equivalent monetary tiers.
-- **Sponsorship Cycle**: The 12‑month period beginning on the date of first payment.
+Explains how to become a sponsor of the EGTS project, the benefits, and the legal terms.
 
-## Tiers (if applicable)
-Tiers are identical to the sponsorship program (Bronze–Platinum). In‑kind contributions are evaluated by the Core Team to determine equivalent tier.
+Definitions
 
-## Benefits
-- Sponsoring entities receive a certificate of sponsorship suitable for framing.
-- Access to a private Discord channel for sponsor representatives.
-- Early visibility into roadmap planning (non‑binding preview).
-- Discounted booth space at ApexOS‑organized conferences (Gold+ only).
+· Sponsoring: The act of providing support in exchange for recognition and certain benefits.
 
-## Requirements
-- Sponsoring requires a minimum commitment of one year.
-- Payments via wire transfer, GitHub Sponsors, or Open Collective.
-- Sponsors must provide quarterly usage reports if receiving priority support (to help improve the project).
-- Sponsors may not publicly claim “partnership” without explicit written consent.
+Roles & Responsibilities
 
-## Governance alignment
-The act of sponsoring does not create a joint venture or legal partnership. Core Team decisions remain independent. Sponsoring agreements include a clause that the project may change benefits with 60 days’ notice.
+· GitDigital Products – Negotiates sponsorship agreements.
+· RickCreator87 – Coordinates technical benefits (e.g., early access).
 
-## Branding rules
-- While sponsoring, entities may use the phrase “Proud sponsor of ApexOS” in their own press releases, subject to review.
-- The ApexOS logo must appear smaller than the sponsor’s own logo in any joint communication.
-- No use of ApexOS in domain names (e.g., apexos‑sponsor.com is prohibited).
+Requirements
 
-## Public recognition rules
-- Sponsoring entities are recognized in the project’s “Thanks to our sponsors” slide at every conference talk given by Core Team members.
-- Monthly sponsorship spotlight on the project blog: one sponsor per month, rotating across tiers (Platinum guaranteed at least once per quarter).
-- Sponsors who complete three consecutive years receive a “Long‑Term Sponsor” badge.
+· Sponsorship applications must be submitted via email to sponsors@gitdigital.example.
+· Minimum sponsorship term is 6 months.
+· Benefits are listed in sponsorship_tier.md.
 
-## Templates (if applicable)
-- Sponsoring initiation email template: available upon request from sponsors@apexos.org
-- In‑kind contribution evaluation form: https://apexos.org/inkind-form
+Sponsorship Process
+
+1. Inquire with GitDigital Products.
+2. Select a tier.
+3. Sign the sponsorship agreement.
+4. Make first payment or resource commitment.
+5. Name appears in sponsor files within 5 business days.
+
+Governance Alignment
+
+Sponsorship does not alter the governance model; it is a support relationship only.
