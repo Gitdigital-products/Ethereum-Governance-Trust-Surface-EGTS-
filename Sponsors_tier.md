@@ -3,7 +3,7 @@
 
 ## Purpose
 This document defines how multiple sponsors are grouped and displayed according to their sponsorship tier, including capacity limits and waitlist management.
-
+w2
 ## Definitions
 - **Sponsors Tier Group**: All active sponsors belonging to the same contribution tier.
 - **Tier Capacity**: Maximum number of sponsors allowed in a given tier (if any).
