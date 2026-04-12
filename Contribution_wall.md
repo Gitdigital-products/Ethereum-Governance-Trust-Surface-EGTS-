@@ -1,4 +1,37 @@
 === FILE: contribution_wall.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Shows the volume and types of contributions per contributor.
+
+Definitions
+
+· Contribution Wall: Detailed breakdown of contributions.
+
+Roles & Responsibilities
+
+· RickCreator87 – Updates from git logs.
+
+Requirements
+
+· Includes count of commits, issues closed, reviews done.
+
+Contribution Wall (top)
+
+Contributor Commits Issues Closed PR Reviews Documentation
+GitDigital Products 10 0 5 2
+RickCreator87 25 3 8 15
+
+Governance Alignment
+
+Used by maintainers to evaluate promotion to reviewer or maintainer.
+
+
+=== FILE: contribution_wall.md ===
 # Contribution Wall
 
 ## Purpose
