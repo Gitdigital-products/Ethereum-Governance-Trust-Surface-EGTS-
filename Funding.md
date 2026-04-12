@@ -1,4 +1,40 @@
 === FILE: funding.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+Human‑readable overview of EGTS funding, including how money is raised and spent.
+
+Definitions
+
+· Funding: Financial resources available to the project.
+
+Roles & Responsibilities
+
+· GitDigital Products – Authorizes expenditures.
+· RickCreator87 – Proposes budget for technical needs.
+
+Requirements
+
+· A funding report is published every quarter.
+· Unspent funds are carried over to the next quarter.
+
+Current Funding Status
+
+· Total raised (2026): $50,000
+· Total spent: $0 (initial phase)
+· Reserve: $50,000
+
+Governance Alignment
+
+Funding decisions follow the financial governance appendix of GOVERNANCE.md.
+
+
+
+=== FILE: funding.md ===
 # Funding
 
 ## Purpose
