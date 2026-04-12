@@ -2,6 +2,7 @@
 === FILE: sponsors_tier.md ===
 
 OWNER: GitDigital Products
+
 AUTHOR: RickCreator87
 
 Purpose
