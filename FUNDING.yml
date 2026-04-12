@@ -1,4 +1,42 @@
 === FILE: FUNDING.yml ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+Machine‑readable YAML file describing funding sources, amounts, and usage for EGTS.
+
+Definitions
+
+· Funding Source: Any entity providing financial support.
+
+Roles & Responsibilities
+
+· GitDigital Products – Updates this file within 7 days of any funding change.
+· RickCreator87 – Validates YAML syntax.
+
+Requirements
+
+· File must be valid YAML.
+· Each funding source must have name, tier, annual_amount_usd, and last_payment_date.
+
+Funding Sources
+
+```yaml
+funding_sources:
+  - name: "GitDigital Products"
+    tier: "Founding"
+    annual_amount_usd: 50000
+    last_payment_date: "2026-01-01"
+    status: "active"
+```
+
+Governance Alignment
+
+This file is part of the financial transparency required by GOVERNANCE.md.
+
+
+=== FILE: FUNDING.yml ===
 # FUNDING.yml
 purpose: |
   This YAML file configures the funding links displayed on the ApexOS GitHub repository.
