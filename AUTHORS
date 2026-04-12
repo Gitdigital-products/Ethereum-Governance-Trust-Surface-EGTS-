@@ -1,0 +1,33 @@
+=== FILE: AUTHORS ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+Enumerates all individuals and organizations that have contributed to the EGTS project and hold authorship rights.
+
+Definitions
+
+· Author: Any entity that has submitted a change that was merged into the main branch.
+
+Roles & Responsibilities
+
+· GitDigital Products – Maintains the definitive list of authors.
+· RickCreator87 – Verifies that each author has signed the CLA.
+· Authors have no governance authority unless also designated as owners or maintainers.
+
+Requirements
+
+· Every commit author must appear in this file or in a signed‑off-by trailer.
+· Adding a new author requires a pull request approved by any owner.
+· Authors must provide a valid email address for project notifications.
+
+Author List (alphabetical)
+
+· GitDigital Products <legal@gitdigital.example>
+· RickCreator87 <rick@gitdigital.example>
+
+Governance Alignment
+
+This file supports the contributor recognition policy in GOVERNANCE.md. Missing authorship does not affect intellectual property rights.
+
