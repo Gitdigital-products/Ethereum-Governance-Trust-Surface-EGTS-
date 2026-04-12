@@ -1,0 +1,40 @@
+=== FILE: CODEOWNERS ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+This file defines the default owners for all files and directories in the Ethereum Governance Trust Surface (EGTS) repository. It ensures that every change request receives review from the designated responsible entity.
+
+Definitions
+
+· Owner: The individual or team accountable for code review and approval.
+· Pattern: A file or directory path that matches a set of repository artifacts.
+· Primary Owner: The first listed owner for a pattern; holds final approval authority.
+
+Roles & Responsibilities
+
+· GitDigital Products: Serves as the primary owner for the entire codebase.
+· RickCreator87: Authorized technical lead; may be listed as secondary owner for specific paths.
+· CODEOWNERS file: MUST be kept synchronized with repository structure and team membership.
+
+Requirements
+
+· All pull requests MUST receive approval from at least one owner matching the affected paths.
+· Changes to this file require approval from the repository administrator.
+· Patterns follow standard GitHub CODEOWNERS syntax.
+· No wildcard pattern may omit an owner.
+
+Governance Alignment
+
+This file implements the ownership model defined in GOVERNANCE.md. Any dispute in ownership resolution escalates to the EGTS Governance Board.
+
+Default ownership
+
+· @GitDigitalProducts
+
+Specific module ownership (examples)
+
+/docs/ @RickCreator87
+/src/ @GitDigitalProducts
+/tests/ @GitDigitalProducts
