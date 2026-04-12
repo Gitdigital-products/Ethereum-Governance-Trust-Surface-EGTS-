@@ -1,4 +1,31 @@
 === FILE: sponsorship.md ===
+OWNER: GitDigital Products
+AUTHOR: RickCreator87
+
+Purpose
+
+Comprehensive overview of the EGTS sponsorship program, including philosophy, tiers, and usage of funds.
+
+Definitions
+
+· Sponsorship Program: A structured way for external entities to support the project.
+
+Roles & Responsibilities
+
+· GitDigital Products – Administers funds and reports annually.
+· RickCreator87 – Uses funds for infrastructure, audits, and developer incentives.
+
+Requirements
+
+· Sponsorship funds must be tracked in FUNDING.yml.
+· A public transparency report is published every 6 months.
+· Sponsors may not direct technical decisions.
+
+Governance Alignment
+
+Sponsorship is governed by the EGTS Financial Policy, a sub‑document of GOVERNANCE.md.
+
+=== FILE: sponsorship.md ===
 # Sponsorship
 
 ## Purpose
