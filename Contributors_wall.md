@@ -1,4 +1,38 @@
 === FILE: contributors_wall.md ===
+
+OWNER: GitDigital Products
+
+AUTHOR: RickCreator87
+
+Purpose
+
+A wall of fame for all contributors (code, documentation, governance) regardless of membership status.
+
+Definitions
+
+· Contributor Wall: A recognition list separate from sponsors/supporters.
+
+Roles & Responsibilities
+
+· GitDigital Products – Approves wall format.
+· RickCreator87 – Adds new contributors.
+
+Requirements
+
+· Anyone with a merged pull request or equivalent is eligible.
+· Contributors can request removal.
+
+Contributors Wall
+
+· GitDigital Products (founding contributor)
+· RickCreator87 (founding contributor)
+
+Governance Alignment
+
+The wall is maintained as a goodwill gesture, not a governance requirement.
+
+
+=== FILE: contributors_wall.md ===
 # Contributors Wall
 
 ## Purpose
