@@ -1,0 +1,41 @@
+===== FILE: / examples/v0.3.x/example-validation-triad.json =====
+
+---
+
+version: "0.3.x"
+status: "Active Draft"
+spec: "EGTS"
+file: "/examples/v0.3.x/example-validation-triad.json"
+
+---
+
+```json
+{
+  "@context": "https://egts.standard/v0.3.x/context.jsonld",
+  "role": {
+    "roleId": "did:example:green-org/role/proposer",
+    "roleType": "Proposer",
+    "governingEntity": "did:example:org/green-energy-collective",
+    "delegationChain": ["did:example:delegate/council-member-01"],
+    "validFrom": "2026-01-01T00:00:00Z",
+    "validUntil": "2027-01-01T00:00:00Z"
+  },
+  "authority": {
+    "authorityId": "did:example:green-org/authority/bylaws",
+    "source": "https://green.org/bylaws/2025",
+    "scope": "Treasury allocations and membership changes",
+    "constraints": ["2/3 majority required"]
+  },
+  "context": {
+    "governanceScope": "Green Energy Collective DAO (fictional)",
+    "chainReference": "arbitrum-one",
+    "temporalBounds": {
+      "start": "2026-04-01T00:00:00Z",
+      "end": null
+    },
+    "spatialBounds": {
+      "jurisdiction": "Decentralized"
+    }
+  }
+}
+```
