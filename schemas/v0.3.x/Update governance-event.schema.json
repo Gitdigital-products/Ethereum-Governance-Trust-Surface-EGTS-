@@ -1,0 +1,81 @@
+File Structure (v0.3.x)
+
+Path Description
+/schemas/v0.3.x/governance-event.schema.json Core governance event schema
+/schemas/v0.3.x/validation-triad.schema.json Role, Authority, Context definitions
+/schemas/v0.3.x/audit-log-entry.schema.json Cryptographic audit log entry
+/schemas/v0.3.x/trust-signal.schema.json Optional trust attestation
+/registry/v0.3.x/governance-role-registry.md DID‑based registry for roles/authorities
+/adapters/v0.3.x/ethereum-l1-adapter.md Ethereum mainnet → EGTS mapping
+/adapters/v0.3.x/ethereum-l2-adapter.md L2 (Arbitrum, Optimism, etc.) mapping
+/adapters/v0.3.x/offchain-governance-adapter.md Forum / off‑chain → EGTS mapping
+/lifecycle/v0.3.x/audit-log-lifecycle.md Hash chain & signature lifecycle
+/lifecycle/v0.3.x/trust-signal-lifecycle.md Emit, propagate, aggregate, decay
+/examples/v0.3.x/*.json Fictional examples
+
+Validation Triad
+
+Every EGTS governance event is validated by three components:
+
+· Role – Who is acting (DID + role type).
+· Authority – Under what right (source, scope, constraints).
+· Context – Where/when (chain, temporal bounds, domain).
+
+An event is valid if and only if the triad exists in the Governance‑Role Registry and the action matches the authority’s scope and the context’s bounds.
+
+Usage Without Blockchain
+
+EGTS does not require a blockchain. You can:
+
+· Store governance events as JSON files.
+· Maintain an audit log in a Git repository.
+· Emit trust signals via email or webhooks.
+
+Blockchain adapters exist only to normalise existing on‑chain events into the standard format.
+
+Versioning
+
+· Major.minor.patch (semver). v0.3.x is an active draft.
+· Backwards‑compatible changes increment patch.
+· Breaking changes (e.g., schema modifications) increment minor while v0.x is unstable.
+· After v1.0, major increments for incompatibility.
+
+Relationship to Other Standards
+
+Standard Relationship
+W3C DID EGTS uses DIDs for all actors and roles.
+JSON‑LD All schemas are JSON‑LD compatible.
+EIP‑4824 EIP‑4824 defines DAO metadata; EGTS complements with event‑level interoperability.
+ActivityPub EGTS event types are inspired by ActivityStreams but governance‑specific.
+
+Getting Started (Implementer’s Guide)
+
+1. Define your governance sources (e.g., Ethereum governor contract, Discourse forum).
+2. Implement an adapter that emits EGTS GovernanceEvent objects (see adapters/).
+3. Set up a Governance‑Role Registry (a JSON file or versioned document).
+4. Optionally, maintain an audit log using the audit‑log lifecycle.
+5. Optionally, emit trust signals from verifiers.
+
+No smart contract deployment, token creation, or validator onboarding is required.
+
+Fictional Example Walkthrough
+
+Assume a simple governance action: Alice votes “for” on proposal #42 on Ethereum mainnet.
+
+· The L1 adapter reads the VoteCast log.
+· It maps msg.sender 0xAlice → did:example:person/alice.
+· It emits a GovernanceEvent with eventType: VoteCast, role.governingEntity: did:example:person/alice, authority.source: "ethereum:0xGovernor", context.chainReference: ethereum-mainnet.
+· The audit log creates an entry, hashes it, and chains it to the previous log.
+· A trust verifier later emits a TrustSignal with value: 0.99, target: audit-log-entry-id.
+
+All without tokens, staking, or PBFT.
+
+Contributing & Feedback
+
+EGTS is a public standards document. Contributions must adhere to the non‑requirements listed above. Proposals that introduce tokens, staking, validator sets, badges, KYC, or economic incentives will be rejected.
+
+Contact: (fictional) EGTS Standards Working Group – egts@example.org (no real email – placeholder).
+
+License
+
+This document is licensed under CC BY‑SA 4.0.
