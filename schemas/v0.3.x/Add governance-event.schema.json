@@ -1,0 +1,131 @@
+===== FILE: / schemas/v0.3.x/governance-event.schema.json =====
+
+---
+
+version: "0.3.x"
+status: "Active Draft"
+spec: "EGTS"
+file: "/schemas/v0.3.x/governance-event.schema.json"
+year: 2026
+organization: "Human Stability Systems"
+codeOwner: "GitDigital Products"
+author: "RickCreator87"
+
+---
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://egts.standard/v0.3.x/governance-event.schema.json",
+  "title": "GovernanceEvent",
+  "description": "A JSON-LD schema for representing governance actions and state changes across any governance system.",
+  "@context": {
+    "egts": "https://egts.standard/v0.3.x/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+    "eventType": "egts:eventType",
+    "timestamp": {"@id": "egts:timestamp", "@type": "xsd:dateTime"},
+    "role": "egts:Role",
+    "authority": "egts:Authority",
+    "context": "egts:Context",
+    "proposalId": "egts:proposalId",
+    "details": "egts:details",
+    "signature": "egts:signature"
+  },
+  "type": "object",
+  "required": ["id", "type", "eventType", "timestamp", "role", "authority", "context", "proposalId"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Unique identifier for the event (e.g., a UUID URN or DID URL)."
+    },
+    "type": {
+      "const": "GovernanceEvent",
+      "description": "Fixed type for EGTS governance events."
+    },
+    "eventType": {
+      "type": "string",
+      "enum": [
+        "ProposalCreated",
+        "ProposalUpdated",
+        "VoteCast",
+        "VoteDelegated",
+        "DecisionExecuted",
+        "RoleAssigned",
+        "RoleRevoked",
+        "AuthorityGranted",
+        "AuthorityRevoked",
+        "ContextDefined"
+      ],
+      "description": "The specific kind of governance action."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the event occurred."
+    },
+    "role": {
+      "$ref": "#/definitions/RoleReference",
+      "description": "The governance role performing the action."
+    },
+    "authority": {
+      "$ref": "#/definitions/AuthorityReference",
+      "description": "The authority under which the action is taken."
+    },
+    "context": {
+      "$ref": "#/definitions/ContextReference",
+      "description": "The governance context (scope, chain, temporal bounds)."
+    },
+    "proposalId": {
+      "type": "string",
+      "description": "Identifier of the related proposal, if any."
+    },
+    "details": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Optional free-form details (must be schema-compliant with local policy)."
+    },
+    "signature": {
+      "type": "string",
+      "description": "Optional cryptographic signature of the event payload (for audit integrity)."
+    }
+  },
+  "definitions": {
+    "RoleReference": {
+      "type": "object",
+      "required": ["roleId", "roleType"],
+      "properties": {
+        "roleId": {"type": "string", "description": "DID or stable identifier of the role."},
+        "roleType": {"type": "string", "description": "Type of role (e.g., 'Proposer', 'Voter', 'Executor')."},
+        "governingEntity": {"type": "string", "description": "DID of the entity holding the role."}
+      }
+    },
+    "AuthorityReference": {
+      "type": "object",
+      "required": ["authorityId", "source"],
+      "properties": {
+        "authorityId": {"type": "string"},
+        "source": {"type": "string", "description": "Origin of authority (e.g., constitution, smart contract, legal document)."},
+        "scope": {"type": "string", "description": "Domain over which authority applies."}
+      }
+    },
+    "ContextReference": {
+      "type": "object",
+      "required": ["governanceScope"],
+      "properties": {
+        "governanceScope": {"type": "string"},
+        "chainReference": {"type": "string", "description": "Blockchain network identifier (if any)."},
+        "temporalBounds": {
+          "type": "object",
+          "properties": {
+            "start": {"type": "string", "format": "date-time"},
+            "end": {"type": "string", "format": "date-time"}
+          }
+        }
+      }
+    }
+  }
+}
+```
