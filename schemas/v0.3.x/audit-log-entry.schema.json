@@ -1,0 +1,67 @@
+===== FILE: /schemas/v0.3.x/ audit-log-entry.schema.json =====
+
+---
+
+version: "0.3.x"
+status: "Active Draft"
+spec: "EGTS"
+file: "/schemas/v0.3.x/audit-log-entry.schema.json"
+
+---
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://egts.standard/v0.3.x/audit-log-entry.schema.json",
+  "title": "AuditLogEntry",
+  "description": "A cryptographically chained entry in an immutable audit log, linking to a governance event.",
+  "@context": {
+    "egts": "https://egts.standard/v0.3.x/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+    "timestamp": {"@id": "egts:timestamp", "@type": "xsd:dateTime"},
+    "eventHash": {"@id": "egts:eventHash", "@type": "xsd:hexBinary"},
+    "previousHash": {"@id": "egts:previousHash", "@type": "xsd:hexBinary"},
+    "signature": "egts:signature",
+    "payload": "egts:payload"
+  },
+  "type": "object",
+  "required": ["id", "type", "timestamp", "eventHash", "previousHash", "signature", "payload"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Unique identifier for the log entry (e.g., a UUID URN)."
+    },
+    "type": {
+      "const": "AuditLogEntry",
+      "description": "Fixed type for EGTS audit log entries."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of log entry creation."
+    },
+    "eventHash": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$",
+      "description": "SHA‑256 hash of the canonical JSON representation of the governance event."
+    },
+    "previousHash": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$",
+      "description": "SHA‑256 hash of the previous log entry (or all-zero hash for genesis)."
+    },
+    "signature": {
+      "type": "string",
+      "description": "Ed25519 signature over (timestamp || eventHash || previousHash) by the logging entity."
+    },
+    "payload": {
+      "$ref": "https://egts.standard/v0.3.x/governance-event.schema.json",
+      "description": "The full governance event being logged."
+    }
+  },
+  "additionalProperties": false
+}
+```
