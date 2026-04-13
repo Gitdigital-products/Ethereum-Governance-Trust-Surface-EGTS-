@@ -1,0 +1,99 @@
+===== FILE: /schemas/v0.3.x/ validation-triad.schema.json =====
+
+---
+
+version: "0.3.x"
+status: "Active Draft"
+spec: "EGTS"
+file: "/schemas/v0.3.x/validation-triad.schema.json"
+
+---
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://egts.standard/v0.3.x/validation-triad.schema.json",
+  "title": "ValidationTriad",
+  "description": "The three core components – Role, Authority, Context – that together enable deterministic validation of any governance action.",
+  "@context": {
+    "egts": "https://egts.standard/v0.3.x/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Role": "egts:Role",
+    "Authority": "egts:Authority",
+    "Context": "egts:Context"
+  },
+  "type": "object",
+  "required": ["role", "authority", "context"],
+  "properties": {
+    "role": {
+      "$ref": "#/definitions/Role",
+      "description": "The governance role – who is acting."
+    },
+    "authority": {
+      "$ref": "#/definitions/Authority",
+      "description": "The authority – under what right or rule."
+    },
+    "context": {
+      "$ref": "#/definitions/Context",
+      "description": "The context – where and when the action is valid."
+    }
+  },
+  "definitions": {
+    "Role": {
+      "type": "object",
+      "required": ["roleId", "roleType", "governingEntity"],
+      "properties": {
+        "roleId": {"type": "string", "format": "uri", "description": "DID of the role (e.g., did:example:123#role/voter)"},
+        "roleType": {
+          "type": "string",
+          "enum": ["Proposer", "Voter", "Executor", "Validator", "Observer", "Delegate"],
+          "description": "Standard role types defined by EGTS."
+        },
+        "governingEntity": {"type": "string", "format": "uri", "description": "DID of the entity (person, organization, or automated agent) holding the role."},
+        "delegationChain": {
+          "type": "array",
+          "items": {"type": "string", "format": "uri"},
+          "description": "Optional DIDs representing the chain of delegation."
+        }
+      }
+    },
+    "Authority": {
+      "type": "object",
+      "required": ["authorityId", "source", "scope"],
+      "properties": {
+        "authorityId": {"type": "string", "format": "uri"},
+        "source": {
+          "type": "string",
+          "description": "URI or citation of the rule set (e.g., 'https://example.org/constitution/v1', 'did:example:456#by-law-2')."
+        },
+        "scope": {"type": "string", "description": "Textual or structured scope of authority (e.g., 'parameter changes', 'treasury moves')."},
+        "constraints": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Additional constraints (quorum, time locks, etc.) expressed as predicates."
+        }
+      }
+    },
+    "Context": {
+      "type": "object",
+      "required": ["governanceScope"],
+      "properties": {
+        "governanceScope": {"type": "string", "description": "Identifier of the governance system or domain."},
+        "chainReference": {"type": "string", "description": "Blockchain network identifier (e.g., 'ethereum-mainnet', 'arbitrum-one')."},
+        "temporalBounds": {
+          "type": "object",
+          "properties": {
+            "start": {"type": "string", "format": "date-time"},
+            "end": {"type": "string", "format": "date-time"}
+          }
+        },
+        "spatialBounds": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Jurisdictional or domain‑specific bounds."
+        }
+      }
+    }
+  }
+}
+```
