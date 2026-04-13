@@ -1,0 +1,74 @@
+===== FILE: / schemas/v0.3.x/trust-signal.schema.json =====
+
+---
+
+version: "0.3.x"
+status: "Active Draft"
+spec: "EGTS"
+file: "/schemas/v0.3.x/trust-signal.schema.json"
+year: 2026
+organization: "Human Stability Systems"
+codeOwner: "GitDigital Products"
+author: "RickCreator87"
+
+---
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://egts.standard/v0.3.x/trust-signal.schema.json",
+  "title": "TrustSignal",
+  "description": "An attestation about the quality, validity, or reliability of a governance event, role, or authority.",
+  "@context": {
+    "egts": "https://egts.standard/v0.3.x/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+    "signalType": "egts:signalType",
+    "value": {"@id": "egts:value", "@type": "xsd:double"},
+    "source": "egts:source",
+    "target": "egts:target",
+    "evidence": "egts:evidence",
+    "timestamp": {"@id": "egts:timestamp", "@type": "xsd:dateTime"},
+    "expiration": {"@id": "egts:expiration", "@type": "xsd:dateTime"}
+  },
+  "type": "object",
+  "required": ["id", "type", "signalType", "value", "source", "target", "timestamp"],
+  "properties": {
+    "id": {"type": "string", "format": "uri"},
+    "type": {"const": "TrustSignal"},
+    "signalType": {
+      "type": "string",
+      "enum": ["Validity", "Reputation", "Accuracy", "Compliance", "Performance"],
+      "description": "Category of trust signal."
+    },
+    "value": {
+      "type": "number",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "description": "Normalized trust value (negative for distrust, zero neutral, positive for trust)."
+    },
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "description": "DID of the entity emitting the signal."
+    },
+    "target": {
+      "type": "string",
+      "format": "uri",
+      "description": "DID or event ID that the signal applies to."
+    },
+    "evidence": {
+      "type": "array",
+      "items": {"type": "string", "format": "uri"},
+      "description": "References to supporting data (events, attestations, off-chain documents)."
+    },
+    "timestamp": {"type": "string", "format": "date-time"},
+    "expiration": {"type": "string", "format": "date-time", "description": "Optional time after which signal is considered stale."},
+    "signature": {
+      "type": "string",
+      "description": "Optional signature from the source for non-repudiation."
+    }
+  }
+}
+```
